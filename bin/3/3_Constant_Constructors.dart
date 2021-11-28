@@ -15,7 +15,7 @@ class SmartPhone {
 
 void main() {
 
-  //Hence, Dart would not allocate new memory for each of these instances.
+  //Hence, Dart would not allocate new memory for each of these instances. Because all instances are equal
   var smartPhone = SmartPhone(brand: 'Samsung', price: 200);
   var smartPhone1 = SmartPhone(brand: 'Samsung', price: 200);
   var smartPhone2 = SmartPhone(brand: 'Samsung', price: 200);
