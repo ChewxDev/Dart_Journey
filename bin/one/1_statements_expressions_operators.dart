@@ -1,4 +1,6 @@
 void main(List<String> arguments) {
+  //This is a comment, the computer does not execute comments, it is mostly used to make codes easily understandable
+
   //Make sure to write your code in the main function
   //Statements- These are intructions eg
   print(
