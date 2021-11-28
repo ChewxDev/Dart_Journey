@@ -95,6 +95,6 @@ operators with higher precedence are executed first
  * */
 
   //* Overriding precedence
-  print('The result with parentheses back: ${3 > 4 && (1 < 2 || 1 < 4)}');//
+  print('The result with parentheses back: ${3 > 4 && (1 < 2 || 1 < 4)}');//Notice while interpolating her the {} symbol is added to the $ symbol that is because {} is needed for complex expressions
   print('The result with parentheses in front: ${(3 > 4 && 1 < 2) || 1 < 4}');
 }
