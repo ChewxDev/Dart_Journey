@@ -29,7 +29,7 @@ void main() {
   //* variable scope
   // Where is the variable visible and usable
   if (age > 18) {
-    const name = 'Chewx';
+    const name = 'Chewx';//This variable ca only be used inside the if statement, hence it is a local variable
     print('Hello $name, you are of legal age1');
   }
   // print("Hello, $name");
@@ -90,7 +90,7 @@ void main() {
   }
 }
 
-enum MenuItem {
+enum MenuItem { //Creating a custom type using enum
   profile,
   settings,
 }
