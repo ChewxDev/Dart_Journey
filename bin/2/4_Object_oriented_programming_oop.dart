@@ -26,8 +26,8 @@ an object is the actual house
 class Car {
   // the ? mark was added after we talked about null-safety
   // if you face errors just don't include it
-  String make;//Variables in classes are called properties
-  String bodyType;
+  String? make;//Variables in classes are called properties
+  String? bodyType;
 
   String toJson() {//Functions in classes aree called methods
     return '{"make":$make,"bodyType":"$bodyType"}';

@@ -45,7 +45,7 @@ void isEvenOrOdd(int value){
 // optional parameter | with return
   // the ? mark was added after we talked about null-safety
   // if you face errors just don't include it
-String enterName(String firstName, [String lastName]){//Called optional parameter because even if the argument of the parameter is not initialized it would not raise error
+String enterName(String firstName, [String? lastName]){//Called optional parameter because even if the argument of the parameter is not initialized it would not raise error
   if (lastName == null) {
    return firstName;
   }else{
@@ -59,21 +59,21 @@ void enterProfileDetails(String name, [String position = 'student']){//Called de
 }
 
 // named parameter
-void editProfile({String newName, String newPassword}){//Called named parameter because to initialize it as an argument you need to use the name of the parameter, and it can be assigned in any order
+void editProfile({String? newName, String? newPassword}){//Called named parameter because to initialize it as an argument you need to use the name of the parameter, and it can be assigned in any order
   print('New name: $newName \n New password: $newPassword');
 }
 
 // mixed parameters
   // the ? mark was added after we talked about null-safety
   // if you face errors just don't include it
-void userDetails(String name, {String position}){
+void userDetails(String name, {String? position}){
   print('Name: $name \n Position: $position');
 }
 
 
 
 void main(){
-  var result = add(int.parse(stdin.readLineSync()), int.parse(stdin.readLineSync()));
+  var result = add(int.parse(stdin.readLineSync()!), int.parse(stdin.readLineSync()!));//The exclamation marks are null assertion.
   print('The result is: $result');
 
   isEvenOrOdd(3);
